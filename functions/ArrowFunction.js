@@ -21,9 +21,9 @@ const obj=
     age:18,
     myFunction:function()
       {
-        console.log(thos.value);
+        console.log(this.value);
   },
   };
-obj.function()
+obj.myFunction()
 
 

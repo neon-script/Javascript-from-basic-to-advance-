@@ -137,7 +137,9 @@ console.log(s.charAt(3));
 console.log(s.indexOf('d'));
 console.log(s.substring(2,6));
 console.log(s.substring(5));
-console.log(s.slice(-11,-6));
+s="hello world";
+console.log(s.slice(-11,10));// 11-11=0// h// remember slice will print upto second last i.e on 10 you have d so it will print upto l
+console.log(s.slice(-10,-6));// 11-10=1=e, 11-6=5=>space
 console.log(s.replace('Hello','joy'));
 console.log(s.valueOf());
 console.log(s.split());// convert into string of array

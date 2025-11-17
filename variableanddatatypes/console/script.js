@@ -78,10 +78,69 @@ console.log(newSirName,obj);
 // Convert string to number
 
 let string="lolo";
- string= parseInt(string);
+ string= parseInt(string);// it tries to seperate integer part from string but the whole part is non-numeric so it returns NaN
 //string=+string;
-string=Number(string);
-console.log(string);
+string=Number(string); //it also return NAN
+console.log(string);// NAN
+
+
+//operators
+let x=2;
+x+=2;
+x*=3;
+x%=3;
+x-=3;
+x='Hello' + ' '+'World';
+x=2**3;
+x--;
+x++;
+x=2=='2';// loosely equity
+x=2==='2';// strict equity
+x=2!=2;//Not Equal to
+x=2!==2;
+console.log(x);
+// type coercion -- process of automatically  converting a value from one data type to another
+
+x=5+'5';
+console.log(x); // 55
+x=5+Number('5') ;
+console.log(x); //10
+x= 5 * '5';
+console.log(x);//25
+x= 5+ null
+console.log(x);
+// Explicit type coercion or type casting
+x= Number(null);
+console.log(x);//0
+x=Number(true);
+console.log(x);//1
+x=Number(false);
+console.log(x);//0
+x= Number(undefined);
+console.log(x);//NaN
+
+//string
+let Name =`My name is john Doe`;
+console.log(Name);
+Name='Johny Liver';
+console.log(`My Name is ${Name}`);
+
+let s= new String('Hello World');
+//s=typeof s;
+console.log(s);
+//s= s.length;
+console.log(s);
+let store=s[1];
+console.log(store);
+console.log(store.__proto__);
+console.log(s.charAt(3));
+console.log(s.indexOf('d'));
+console.log(s.substring(2,6));
+console.log(s.substring(5));
+console.log(s.slice(-11,-6));
+console.log(s.replace('Hello','joy'));
+console.log(s.valueOf());
+console.log(s.split());// convert into string of array
 
 
 

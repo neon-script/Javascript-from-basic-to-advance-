@@ -143,6 +143,10 @@ console.log(s.slice(-10,-6));// 11-10=1=e, 11-6=5=>space
 console.log(s.replace('Hello','joy'));
 console.log(s.valueOf());
 console.log(s.split());// convert into string of array
+let mystring= "developer";
+let newstring;
+  newstring=mystring.charAt(0).toUpperCase()+mystring.slice(1);
+ console.log(newstring);
 
 
 

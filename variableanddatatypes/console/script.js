@@ -168,18 +168,17 @@ let newstring;
  let date=new Date();
  console.log(date);
  console.log('2025-10-11')
- d = Date.now();
+ console.log(Date.now());
 
 // Get the timestamp of a specific date
 console.log(new Date());
-d = d.getTime();
-d = d.valueOf();
+
 
 // Create a date from a timestamp
-d = new Date(1666962049745);
+console.log(new Date(1666962049745));
 
 // Convert from milliseconds to seconds
-d = Math.floor(Date.now() / 1000);
+console.log(Math.floor(Date.now() / 1000));
 
 console.log(d);
  

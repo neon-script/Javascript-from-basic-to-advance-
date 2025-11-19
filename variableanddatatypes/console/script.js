@@ -162,6 +162,11 @@ let newstring;
  console.log(Math.min(2,4,5));
  console.log(Math.max(3,4,5));
  console.log(Math.floor(Math.random()*100+1))
+ //challenge--number between 1 and 100 not 0 and 99
+ console.log(Math.floor(Math.random()*100+1))
+
+ let date=new Date();
+ console.log(date);
  
 
 

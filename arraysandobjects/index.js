@@ -79,3 +79,35 @@ const data2={
    age:35
 }
 console.log(data2['name']);
+// object constructor
+const todo=new Object();
+todo.id=1;
+todo.name='RajmaChawal'
+console.log(todo);
+const History={
+   address:{
+      coords:{
+         lat:34.563,
+         lng:-32.211,
+      },
+   },
+}
+console.log(History.address);
+console.log(History.address.coords);
+
+const obj1= {a:1, b:2};
+const obj2={c:3,d:4};
+const obj3={...obj1,...obj2};
+console.log(obj3);
+const obj4= Object.assign({},obj2, obj3);
+const todos=[
+{id:1,name:'Buy Milk'},
+{id:2, name:'Pickup kids from school'},
+{id:3,name:'everything is trash'},
+];
+console.log(todos[0].name);
+console.log(Object.keys(todos));
+console.log(Object.keys(todos).length);
+console.log(Object.values(todos));
+console.log(Object.entries(todos));
+console.log(todos.hasOwnProperty('age'));

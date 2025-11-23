@@ -40,3 +40,42 @@ const a=1;
 const b=2;
 const c=3;
 console.log(Array.of(a,b,c));
+let arr2=[1,2,3,4,5];
+   arr2.unshift(0);
+    arr2.push(6);
+   arr2.reverse();
+console.log(arr2);
+let arr3=[1,2,3,4,5];
+arr3.pop();
+let arr4=[5,6,7,8,9,10];
+let arr5=arr3.concat(arr4);
+
+console.log(arr5);
+//object literal
+const data={
+   name:'John Doe',
+   age:23,
+   isAdmin:true,
+   address:{
+      street:'123 Main street',
+      city:'Boston',
+      state:'MA'
+   },
+   hobbies:['Badminton','Cricket'],
+};
+console.log(data.hobbies);
+console.log(data['name']);
+console.log(data.address.state);
+console.log(data.name);
+console.log(data.hasChildren);
+data.name='jane sharma';
+console.log(data.name);
+data.greet= function (){
+   console.log(`Hello this is ${data.name}`);
+};
+data.greet();
+const data2={
+   name:'Jacquiline',
+   age:35
+}
+console.log(data2['name']);

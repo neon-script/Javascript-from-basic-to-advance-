@@ -143,3 +143,12 @@ const numbers=[22,44,56,78,90];
 const[first,second,...rest]=numbers;
 console.log(first,second,rest);
 console.log(numbers);
+
+const post={
+   id:1,
+   name:'Manika jain',
+   likes:3,
+   body:'This is the body'
+
+}
+const str=JSON.stringify(post);

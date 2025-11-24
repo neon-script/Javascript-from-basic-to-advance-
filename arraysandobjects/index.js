@@ -8,7 +8,7 @@ console.log(fruits);
 let fruit=fruits[0]+fruits[1];
 console.log(fruit);
 console.log(fruits.length);
-fruits[3]='papaya'
+fruits[3]='papaya';
 console.log(fruits);
 fruits[fruits.length]='banana';
 console.log(fruits)
@@ -111,3 +111,35 @@ console.log(Object.keys(todos).length);
 console.log(Object.values(todos));
 console.log(Object.entries(todos));
 console.log(todos.hasOwnProperty('age'));
+const firstName='Radha';
+const lastName='Bhardwaj';
+const age=20;
+const people={
+   firstName,
+   lastName,
+   age
+}
+console.log(people.firstName);
+
+const DataCollect={
+id:1,
+data:{
+   name:'Rasha',
+   age:20
+},
+subject:'Maths'
+};
+console.log(DataCollect)
+console.log(DataCollect.subject)
+const {
+   id:DataID,
+   title,
+     data:{name:Newname},
+}=DataCollect;
+
+console.log(DataCollect.id);
+console.log(DataCollect.data.name);
+const numbers=[22,44,56,78,90];
+const[first,second,...rest]=numbers;
+console.log(first,second,rest);
+console.log(numbers);

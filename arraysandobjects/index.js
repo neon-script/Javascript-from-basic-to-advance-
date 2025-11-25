@@ -223,3 +223,16 @@ id:4,
   }
   const result=subtract(4,2);
   console.log(result,subtract(6,3));
+  function registerUser(user="bot"){
+       return user;
+  }
+  console.log(registerUser());
+  function sum(...numbers){
+     let total=0;
+     for(const num of numbers){
+      total+=num;
+     }
+     return num;
+  }
+
+  

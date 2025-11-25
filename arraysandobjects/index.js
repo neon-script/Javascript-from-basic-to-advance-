@@ -149,6 +149,64 @@ const post={
    name:'Manika jain',
    likes:3,
    body:'This is the body'
-
 }
 const str=JSON.stringify(post);
+console.log(str);
+console.log(str.id);
+const obj= JSON.parse(str);
+ const posts=[
+   {
+   id:1,
+   name:'jira',
+   age:22,
+   },
+   {
+      id:2,
+      name:'alibaba',
+      age:36,
+   }
+ ];
+ JSON.stringify(posts);
+ console.log(posts);
+ const library=[
+   {
+      id:1,
+      author:'Abhishek veeramulla',
+      status:{
+          own:true,
+          reading:false,
+          read:false,
+      },
+   },
+   {
+       id:2,
+      author:'Anahita sharma',
+      status:{
+          own:true,
+          reading:false,
+          read:false,
+   },
+ },
+ {
+ id:3,
+      author:'Akriti varshney',
+      status:{
+          own:true,
+          reading:false,
+          read:false,
+ },
+},
+{
+id:4,
+ author:'Akansha sharma',
+      status:{
+          own:true,
+          reading:false,
+          read:false,
+},
+},
+ ];
+ console.log(library[0].status.read);
+ const{author:Manara}=library[0];
+ console.log(Manara);
+ console.log(library);

@@ -210,3 +210,15 @@ id:4,
  const{author:Manara}=library[0];
  console.log(Manara);
  console.log(library);
+  function sayHello(){
+   console.log('Hello World');
+  }
+  sayHello();
+  function add(num1, num2){
+      console.log(num1+num2);
+  }
+  add(2,4);
+  function subtract(num1,num2 ){
+         console.log(num1-num2);
+  }
+  subtract(4,2);

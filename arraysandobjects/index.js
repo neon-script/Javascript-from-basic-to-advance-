@@ -235,4 +235,5 @@ id:4,
      return num;
   }
 
+  console.log(sum(1,2,3,4,5,6,100));
   

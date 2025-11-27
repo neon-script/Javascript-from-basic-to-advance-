@@ -362,14 +362,29 @@ Expected Result:
 console.log(minMax([1, 2, 3, 4, 5]));
 // { min: 1, max: 5 }*/
 const minMax=(num)=>{
-  const store=Math.min(...num);
-  const box=Math.max(...num);
+   const store=Math.min(...num);
+   const box=Math.max(...num);
   return [store, box];
 }
-const res=minMax[1,2,3,4,5];
-console.log(`${res[0]}, ${res[1]}`);
-let Arr1=[1,3,4,5,6,7,0];
-console.log(Arr1);
-let smallerNo= Math.min(...Arr1);
-console.log(smallerNo);
+const res=minMax([1,2,3,4,5]);
+console.log(res);
+
+const date= new Date(2022,1,30,10,0,0);
+console.log(date);
+const month=date.getMonth();
+const hours= date.getMinutes();
+console.log(month,hours);
+switch(month){
+case 1:
+   console.log('it is january');
+   break;
+   case 2:
+   console.log('it is february');
+      break;
+      case 3:
+    console.log('It is March');
+         break;
+         default:
+      console.log('It is not jan , feb, March');
+}
 

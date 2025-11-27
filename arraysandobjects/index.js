@@ -229,11 +229,147 @@ id:4,
   console.log(registerUser());
   function sum(...numbers){
      let total=0;
-     for(const num of numbers){
-      total+=num;
+     for(let i of numbers){
+      total+=i;
      }
-     return num;
+     return total;
+  }
+  console.log(sum(1,2,3,4,5,6,100));
+
+  function loginUser(user){
+    return `The user ${user.name} with ${user.id}`;
   }
 
-  console.log(sum(1,2,3,4,5,6,100));
-  
+  const user={
+   id:1,
+    name:'Mahira'
+
+  };
+  console.log(user);
+  console.log(user.id);
+  function getRandom(){
+   const randomIndex=Math.floor(Math.random()*arr.length);
+   const item=arr[randomIndex];
+   console.log(item);
+  }
+
+getRandom(1,22,33,7,33,23,12,89);
+
+
+//nested function
+function fi(){
+   x=10;
+   function sec(){
+      y=20;
+      console.log(x+y);
+   }
+   sec();
+}
+fi();
+  function addDollarSign(value){
+   return '$' + value;
+  }
+  console.log(addDollarSign(100));
+
+  const addPlusSign=function(value){
+   return '+' +  value;
+  };
+  console.log(addPlusSign(200));
+
+  const xtreme=100;
+  if(true){
+   console.log(xtreme);
+   const y=200;
+   console.log(xtreme+y);
+  }
+  console.log(y);
+  function run(){
+   var j=100;
+   
+  }
+  //console.log(j);// refrence error
+  run();
+
+  function Userless(z){
+      console.log(z);
+      function UserMore(){
+         let p=22;
+         console.log(p+z);
+      }
+      UserMore();
+   }
+   Userless(100);
+function add(a,b){
+   return a+b;
+}
+console.log(add(3,4));
+const adder=(ax,bx)=>{
+   return ax+bx;
+}
+adder(3,5);
+
+const double=(a)=>a*2;
+const createObj=()=>({
+   name:'Brad'
+});
+const num=[1,2,3,4,5,6];
+num.forEach(function(n){
+console.log(n);
+})
+num.forEach((n)=>console.log(n));// arrow function
+
+(function(){
+   const user='John';
+   console.log(user);
+const hello=()=>console.log('hello form IEFLE');
+hello();
+})();
+(function(name){
+   console.log('Hello'+ name);
+})('Shawn');
+(function hello(){
+   console.log('hello');
+})();
+/*
+Create a function called getCelsius() that takes a temperature in Fahrenheit as an argument and returns the temperature in celsius.
+For bonus points, write it as a one line arrow function
+
+Expected Result:
+
+console.log(getCelsius(32)); // 0
+You can make the output look prettier by putting it into a string. You can even add \xB0 (degrees) and a C in front of the celsius temperature.
+console.log(`The temperature is ${getCelsius(32)} \xB0C`);
+// The temperature is 0 °C
+*/
+const getCelsius=(temp)=>{
+   const celsius=(temp-32)*5/9;
+   return celsius;
+};
+  console.log(`The temperature is ${getCelsius(32)}°C`);
+
+  const getFahren=(temp)=>{
+     const fahren=(temp*1.8)+32;
+     return fahren;
+  }
+  console.log(`The temperature is ${getFahren(0)}°F`);
+/*
+Instructions:
+
+Create an arrow function called minMax() that takes in an array of numbers and returns an object with the minimum and maximum numbers in the array.
+
+Expected Result:
+
+console.log(minMax([1, 2, 3, 4, 5]));
+// { min: 1, max: 5 }*/
+const minMax=(num)=>{
+  const store=Math.min(...num);
+  const box=Math.max(...num);
+  return [store, box];
+}
+const res=minMax[1,2,3,4,5];
+console.log(`${res[0]}, ${res[1]}`);
+let Arr1=[1,3,4,5,6,7,0];
+console.log(Arr1);
+let smallerNo= Math.min(...Arr1);
+console.log(smallerNo);
+

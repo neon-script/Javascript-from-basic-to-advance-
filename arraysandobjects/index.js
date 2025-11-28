@@ -369,7 +369,7 @@ const minMax=(num)=>{
 const res=minMax([1,2,3,4,5]);
 console.log(res);
 
-const date= new Date(2022,1,30,10,0,0);
+const date= new Date(2025,11,28,20,0,0);
 console.log(date);
 const month=date.getMonth();
 const hours= date.getMinutes();
@@ -387,4 +387,54 @@ case 1:
          default:
       console.log('It is not jan , feb, March');
 }
+const currDate= new Date();
+const hour=date.getHours();
+switch(true){
+   case hour<12:
+      console.log('Good Morning');
+      break;
+      case hour <18:
+         console.log('Good Afternoon');
+      break;
+      default:
+         console.log('Good night');
+}
+function Calculator(num1, num2,op){
+   let result;
+switch(op){
+   case '+':
+      result= num1+num2;
+      break;
+   case '-':
+      result=num1-num2;
+      break;
+   case '*':
+   result= num1*num2;
+   break;
+   case '/':
+      result=num1/num2;
+      break;
+   default:
+      result ='Invalid operator';
+}
+console.log(result);
+return result;
+}
+Calculator(3,4,'+');
 
+const z= function(){};
+if(z){
+   console.log('this is truthy');
+}
+else{
+   console.log('this is falsy');
+}
+console.log(Boolean(x));
+const userData={
+ name1: 'Brad' ,
+}
+if(userData){
+   console.log('this is data');
+}else{
+   console.log('No data');
+}

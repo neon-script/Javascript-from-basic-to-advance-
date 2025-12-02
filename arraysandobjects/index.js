@@ -438,3 +438,100 @@ if(userData){
 }else{
    console.log('No data');
 }
+console.log(10<20&&30>15&&40<30);
+console.log(30>12||30<15);
+ let xc=10??20;
+console.log(xc);
+let yz= null??20;
+console.log(yz);
+let zx=''??30;
+console.log(zx);
+let agge=18;
+agge>20? console.log('You can vote'): console.log('You cannot vote')
+const auth=true;
+
+const redirect=auth?(alert('welcome to the dashboard'),'/dashboard'): (alert('Access denied'),'/login');
+console.log(redirect);
+
+const names=['Brad', 'Sam','Sara','John', 'Tim'];
+for(let i=0;i<names.length;i++){
+   if(names[i]=='John'){
+      console.log(names[i]+'is the best');
+   }else{
+      console.log(names[i]);
+   }
+}
+for(let ij=0;ij<=10;ij++){
+   if(ij === 5){
+      console.log('Breaking');
+       break;
+}
+console.log(ij);
+   }
+
+   for(let jk=0;jk<=10;jk++){
+      if(jk===5){
+         console.log('skipping 5...');
+         continue;
+      }
+      console.log(jk);
+   }
+  for(let k=1;k<=10;k++){
+     if(k==6) break;
+     console.log(k);
+  }
+  for(let m=1;m<=7;m++){
+   if(m==6)continue;
+   console.log(m);
+  }
+  let i=1;
+  while(i<20){
+   console.log(i);
+   i++;
+  }
+  let q=1;
+  do{
+   
+   console.log(q);
+   q++;
+  }while(q<10);
+
+  for(let u=0;u<=100;u++){
+      if(u%3==0)console.log("Fizz");
+      else if(u%5==0) console.log("Buzz");
+      else if(u%3==0 && u%5==0) console.log("FizzBuzz");
+      else console.log(i);
+  }
+  const items=['apple','banana','orange','lemon'];
+  const users=[{name:'Brad'}, {name:'kate'}, {name:'stefan'}];
+  for(let i of items){
+   console.log(i[1][1]);
+  }
+
+  const map= new Map();
+  map.set('name','john');
+  map.set('age','30');
+  for(const [key,value] of map){
+   console.log(key, value);
+  }
+
+  const colorObj={
+   color1:'red',
+   color2:'orange',
+   color3:'blue',
+   color4:'green',
+  };
+  for(const key in colorObj){
+   console.log(colorObj[key]);
+  }
+
+  const socials=['twitter', 'google', 'meta', 'facebook'];
+  console.log(socials.__proto__);
+  socials.forEach(function(item){
+   console.log(item);
+  })
+   function logSocials(socials){
+ console.log(socials);
+   }
+
+   socials.forEach(logSocials);
